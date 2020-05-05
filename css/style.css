@@ -1,0 +1,75 @@
+body{
+    margin : 0;
+    background : url('https://www.injustice.com/img/home/home-le-bg.jpg');
+    background-size: 190%;
+}
+
+
+.mid-header{
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin: 10px auto;
+} 
+
+.awards{
+    margin: 50px auto;
+}
+
+#mobile{
+    display : none;
+}
+.active{
+    color : rgb(4, 124, 252);
+    text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(4, 124, 252),
+     0 0 40px rgb(4, 124, 252), 
+     0 0 50px rgb(4, 124, 252), 0 0 60px rgb(4, 124, 252),
+      0 0 70px rgb(4, 124, 252);
+    
+}
+
+/* for ipad */
+@media screen and (max-width : 769px){
+
+    body{
+        background-size: 330%;
+        background-position: -400px 0;
+    }
+
+    .mid-header{
+        margin: 0px auto;
+    }
+
+    .awards{
+        margin: 0px auto;
+    }
+} 
+
+
+
+/* for iphone 5, 6, 7, 8, X */
+@media screen and (max-width : 414px){
+    body{
+        background: url('https://www.injustice.com/img/home/home-bg-mobile-le.jpg');
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: -30px 10px;
+    }
+
+    .mid-header{
+        display: none;
+    }
+    
+    #mobile {
+        display : inline-flex;
+    }
+
+    #no-mobile{
+        display: none;
+    }
+
+   
+}

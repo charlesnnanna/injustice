@@ -1,0 +1,534 @@
+
+.top-header{
+    border-bottom: 1px solid rgb(32, 30, 30);
+    margin : 0;
+    color : white;
+    overflow: hidden;
+    height : 37px;
+
+    img{
+        float : left;
+        margin-top: 1px;
+        margin-left: 20px;
+        height: 35px;
+    }
+
+    ul {
+        display : flex;
+        flex-direction : row;
+        float : left;
+        list-style-type: none;
+        margin-top: 15px;
+        margin-left: -40px;
+
+        li {
+            margin-left: 40px;
+            color :  rgb(146, 141, 141);
+            border : 1px solid imherit;
+            font-family: chiller;
+            font-size: 15px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        li:hover{
+            color : rgb(4, 124, 252);
+        }
+    }
+}
+
+.navigation{
+    img{
+        display: none;
+    }
+
+    span{
+        display: none;
+    }
+}
+
+
+#injustice{
+
+    img{
+    
+        height : 32px;
+        width : 300px;
+    }
+
+    p{
+    
+        font-family: Raleway;
+        color: white;
+        font-weight : normal;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        font-size: 11px;
+        padding-left: 30px;
+        text-transform: uppercase;
+    }
+}
+
+#best{
+    img{
+    
+        height : 55px;
+        width : 250px;
+    }
+}
+
+.nav{
+    ul{
+        color : white;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid rgb(32, 30, 30);
+
+        li{
+            margin-top: -10px;
+            a{
+                text-decoration: none;
+                color: white;
+                margin: 0px 30px;
+                font-family: chiller;
+                letter-spacing: .22em;
+                border: 1px solid inherit;
+                border-radius: 50%;
+                padding: 30px 10px;
+                font-size: .929em;
+                font-weight: 300;
+                text-transform: uppercase;
+                transition: text-shadow ease-in-out 0.4s, color ease-in-out 0.4s, filter ease-in-out 0.4s;
+            }
+
+            a:hover{
+                color : rgb(4, 124, 252);
+                text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(4, 124, 252),
+                 0 0 40px rgb(4, 124, 252), 
+                 0 0 50px rgb(4, 124, 252), 0 0 60px rgb(4, 124, 252),
+                  0 0 70px rgb(4, 124, 252);
+            }
+        }
+    
+    }
+}
+
+.section-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid inherit;
+    margin-left: 100px;
+
+    .video{
+        display: flex;
+        flex-direction: column;
+        margin-top : 50px;
+
+        img{
+            height: 126px;
+            width : 500px;
+            margin-left : 30px;
+        }
+        
+        iframe{
+            border : 1px groove white;
+            margin : 20px auto;
+            height : 350px;
+             width : 600px;    
+        }
+    
+    }
+
+    .legend{
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px ;
+        margin-top: 450px;
+
+        img{
+            height: 58px;
+            width : 350px;
+        }
+        a{
+            color : black;
+            text-decoration: none;
+            
+            padding : 10px;
+            background: url('https://www.injustice.com/storage/static/ui-tiled-bg-transparent.png');
+            font-family: chiller;
+            font-weight: 300;
+            margin : 50px 50px;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow:  inset 0 0 50px  white,      /* inner white */
+            inset 20px 0 80px  rgb(42, 143, 252),   /* inner left magenta short */
+            inset -20px 0 80px  rgb(42, 143, 252),  /* inner right cyan short */
+            inset 20px 0 300px  rgb(42, 143, 252),  /* inner left magenta broad */
+            inset -20px 0 300px rgb(42, 143, 252), /* inner right cyan broad */
+            0 0 50px  rgb(42, 143, 252),            /* outer white */
+            -10px 0 80px  rgb(42, 143, 252),        /* outer left magenta */
+            10px 0 80px  rgb(42, 143, 252);         /* outer right cyan */
+        }
+
+        a:hover{
+            box-shadow: inset 0 0 50px white,      /* inner white */
+            inset 20px 0 80px rgb(4, 124, 252),   /* inner left magenta short */
+            inset -20px 0 80px rgb(4, 124, 252),  /* inner right cyan short */
+            inset 20px 0 300px rgb(4, 124, 252),  /* inner left magenta broad */
+            inset -20px 0 300px rgb(4, 124, 252), /* inner right cyan broad */
+            0 0 50px rgb(4, 124, 252),            /* outer white */
+            -10px 0 80px rgb(4, 124, 252),        /* outer left magenta */
+            10px 0 80px rgb(4, 124, 252);         /* outer right cyan */
+        }
+    }
+}
+
+footer{
+    nav{
+        margin-top : 100px;
+    }
+}
+
+.section-two{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        color : rgb(146, 141, 141);
+        margin : -30px 100px;
+        font-size: 10px;
+        font-weight: 300;
+        font-family: 'Roboto Condensed';
+    
+    }
+
+    ul{
+        color : rgb(146, 141, 141);
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        font-weight: 300;
+        font-family: 'Roboto Condensed';
+
+        li{
+            margin : 0px 30px;
+        }
+    }
+}
+
+.sponsors{
+    margin : -50px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        margin :  100px 60px;
+    }
+
+}
+
+
+/* for ipad */
+@media screen and (max-width : 769px){
+
+    .top-header{
+        height : 40px;
+
+        img {
+        margin-top: 1px;
+        margin-left: 10px;
+        height: 37px;
+        width : 37px;
+        }
+
+        ul {
+            margin-top: 15px;
+            margin-left: -40px;
+    
+            li {
+                margin-left: 40px;
+                font-size: 17px;
+            }
+        }
+    }
+
+    
+    #injustice{
+
+        img{
+        
+            height : 32px;
+            width : 300px;
+        }
+    
+        p{
+            font-size: 13px;
+            padding-left: 20px;
+        }
+    }
+
+
+    #best{
+        img{
+        
+            height : 33px;
+            width : 150px;
+        }
+    }
+
+    #gameawards{
+        img{
+            height : 38px;
+            width : 100px;
+        }
+    }
+
+
+
+    .nav{
+        ul{
+            li{
+                a{
+                    font-size: 1em;
+                    }
+            }
+        }
+    }
+    
+
+
+
+    .section-one{
+        margin-left: 20px;
+    
+        .video{
+            img{
+                height: 101px;
+                width : 400px;
+                margin-left : -20px;
+            }
+            
+            iframe{
+                border : 5px groove white;
+                margin : 20px auto;
+                height : 300px;
+                 width : 400px;    
+            }
+        
+        }
+    
+        .legend{
+            margin-left: 0px;
+            margin-top: 400px;
+        }
+    }
+}
+
+
+/* for iphone 5, 6, 7, 8, X */
+@media screen and (max-width : 414px){
+
+    .top-header{
+        margin : 0;
+        color : white;
+        overflow: hidden;
+        height : 29px;
+    
+        img{
+            margin-top: 1px;
+            margin-left: 10px;
+            height: 27px;
+            width : 27px;
+        }
+    
+        ul {
+
+            display : none;
+    
+            li {
+                margin-left: 40px;
+                color :  rgb(146, 141, 141);
+                border : 1px solid imherit;
+                font-family: chiller;
+                font-size: 15px;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+    
+            li:hover{
+                color : rgb(4, 124, 252);
+            }
+        }
+    }
+
+.navigation{
+
+    border : 1px solid rgb(32, 30, 30);
+    width : 100vw;
+    background-color : black;
+    display : flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height : 50px;
+        img{
+            display : block;
+            height : 80px;
+            width : 140px;
+            margin : 0px 12px;
+        }
+
+
+        .nav{
+            display: none;
+        }
+    }
+
+.section-one{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid inherit;
+    margin-left: 0px;
+
+    .video{
+        display: flex;
+        flex-direction: column;
+        margin-top : 30px;
+
+        img{
+            height: 101px;
+            width : 400px;
+            margin : auto;
+        }
+        
+        iframe{
+            border : 1px groove white;
+            margin : 20px auto;
+            height : 200px;
+             width : 300px;    
+        }
+    
+    }
+
+    .legend{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 0px ;
+        margin-top: 300px;
+
+        img{
+            height: 50px;
+            width : 300px;
+        }
+
+        a{
+            color : black;
+            text-decoration: none;
+            padding : 10px;
+            background: url('https://www.injustice.com/storage/static/ui-tiled-bg-transparent.png');
+            font-family: chiller;
+            font-weight: 300;
+            margin : 30px auto;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow:  inset 0 0 50px  white,      /* inner white */
+            inset 20px 0 80px  rgb(42, 143, 252),   /* inner left magenta short */
+            inset -20px 0 80px  rgb(42, 143, 252),  /* inner right cyan short */
+            inset 20px 0 300px  rgb(42, 143, 252),  /* inner left magenta broad */
+            inset -20px 0 300px rgb(42, 143, 252), /* inner right cyan broad */
+            0 0 50px  rgb(42, 143, 252),            /* outer white */
+            -10px 0 80px  rgb(42, 143, 252),        /* outer left magenta */
+            10px 0 80px  rgb(42, 143, 252);         /* outer right cyan */
+        }
+
+        a:hover{
+            box-shadow: inset 0 0 50px white,      /* inner white */
+            inset 20px 0 80px rgb(4, 124, 252),   /* inner left magenta short */
+            inset -20px 0 80px rgb(4, 124, 252),  /* inner right cyan short */
+            inset 20px 0 300px rgb(4, 124, 252),  /* inner left magenta broad */
+            inset -20px 0 300px rgb(4, 124, 252), /* inner right cyan broad */
+            0 0 50px rgb(4, 124, 252),            /* outer white */
+            -10px 0 80px rgb(4, 124, 252),        /* outer left magenta */
+            10px 0 80px rgb(4, 124, 252);         /* outer right cyan */
+        }
+    }
+}
+
+footer{
+    .nav{
+       margin-top :100px;
+
+       ul{
+        margin-left : -50px;
+        li{
+            margin-top: -10px;
+            a{
+                margin: 0px 10px;               
+            }            
+        } 
+    }
+    }
+}
+
+.section-two{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        color : rgb(146, 141, 141);
+        margin : -30px auto;
+        font-size: 11px;
+        font-weight: 300;
+        font-family: 'Roboto Condensed';
+    
+    }
+
+    ul{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        margin-left : -50px;
+
+        li{
+            
+        }
+    }
+}
+
+.sponsors{
+    margin : 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        margin :  30px 60px;
+    }
+
+}
+
+}
