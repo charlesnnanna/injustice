@@ -22,7 +22,7 @@ const addClickEvent = () => {
             })
                 
                 charactersArray[index].id = 'active-character';
-                currentCharacterArray[index].style.display = 'flex';
+                currentCharacterArray[index].style.display = 'block';
             
         } );
     })
