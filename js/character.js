@@ -17,12 +17,12 @@ const addClickEvent = () => {
             })
         
             currentCharacterArray.map((currentCharacter) => {
-                currentCharacter.id = '';
+                currentCharacter.style.display = 'none';
                 
             })
                 
                 charactersArray[index].id = 'active-character';
-                currentCharacterArray[index].id = 'current-character';
+                currentCharacterArray[index].style.display = 'flex';
             
         } );
     })
