@@ -1,0 +1,238 @@
+#container {
+  background: url("https://www.injustice.com/img/characters/bg.jpg") no-repeat;
+  background-position-y: 200px;
+  background-color: black;
+}
+#container .character-details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#container .character-details .characters {
+  display: flex;
+  margin: 30px 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#container .character-details .characters img {
+  height: 65px;
+  width: 65px;
+  border: 1px solid white;
+  margin: 5px 5px;
+  padding: 0;
+  transition: padding 0.5s, border 0.5s;
+}
+#container .character-details .characters img:hover {
+  padding: 2px;
+  border: 1px solid #047cfc;
+}
+#container .character-details .characters #active-character {
+  border: 1px solid #047cfc;
+  background-color: #047cfc;
+}
+#container .character-details #current-character {
+  display: block;
+}
+#container .character-details .current-character {
+  border: 1px solid inherit;
+  position: relative;
+  display: none;
+  height: 700px;
+  transition: display 2s;
+}
+#container .character-details .current-character .character-image {
+  position: absolute;
+  top: 0px;
+  left: 4px;
+}
+#container .character-details .current-character .character-description {
+  position: absolute;
+  color: white;
+  background: url("https://www.injustice.com/img/tiled-ui-bg.png") repeat;
+  overflow: hidden;
+  padding: 40px;
+  margin: 0 20px;
+  top: 240px;
+  left: 700px;
+  border: 1px solid #201e1e;
+  width: 500px;
+}
+#container .character-details .current-character .character-description .heading h3 {
+  font-family: chiller;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #047cfc, 0 0 40px #047cfc, 0 0 50px #047cfc, 0 0 60px #047cfc, 0 0 70px #047cfc;
+}
+#container .character-details .current-character .character-description .heading h4 {
+  color: #047cfc;
+  font-family: raleway;
+  font-size: 20px;
+  font-weight: 1000;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #047cfc, 0 0 40px #047cfc, 0 0 50px #047cfc, 0 0 60px #047cfc, 0 0 70px #047cfc;
+}
+#container .character-details .current-character .character-description p {
+  font-family: "Raleway";
+  font-size: 17px;
+}
+
+/* for ipad */
+@media screen and (max-width: 769px) {
+  #container {
+    background-position-y: 500px;
+  }
+  #container .character-details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  #container .character-details .characters {
+    display: flex;
+    margin: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #container .character-details .characters img {
+    height: 65px;
+    width: 65px;
+    border: 1px solid white;
+    margin: 5px 5px;
+    padding: 0;
+    transition: padding 0.5s, border 0.5s;
+  }
+  #container .character-details .characters img:hover {
+    padding: 2px;
+    border: 1px solid #047cfc;
+  }
+  #container .character-details .characters #active-character {
+    border: 1px solid #047cfc;
+    background-color: #047cfc;
+  }
+  #container .character-details .current-character {
+    border: 1px solid inherit;
+    position: relative;
+    height: 600px;
+  }
+  #container .character-details .current-character .character-image {
+    position: absolute;
+    top: 0px;
+    left: 0;
+  }
+  #container .character-details .current-character .character-description {
+    position: absolute;
+    color: white;
+    background: url("https://www.injustice.com/img/tiled-ui-bg.png") repeat;
+    overflow: hidden;
+    padding: 40px;
+    margin: 0 20px;
+    top: 300px;
+    left: 250px;
+    border: 1px solid #201e1e;
+    width: 500px;
+  }
+  #container .character-details .current-character .character-description .heading h3 {
+    font-family: chiller;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #047cfc, 0 0 40px #047cfc, 0 0 50px #047cfc, 0 0 60px #047cfc, 0 0 70px #047cfc;
+  }
+  #container .character-details .current-character .character-description .heading h4 {
+    color: #047cfc;
+    font-family: raleway;
+    font-size: 20px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #047cfc, 0 0 40px #047cfc, 0 0 50px #047cfc, 0 0 60px #047cfc, 0 0 70px #047cfc;
+  }
+  #container .character-details .current-character .character-description p {
+    font-family: "Raleway";
+    font-size: 17px;
+  }
+}
+/* for iphone 5, 6, 7, 8, X */
+@media screen and (max-width: 414px) {
+  #container {
+    background: url("https://www.injustice.com/img/media/media-bg-mobile.jpg");
+  }
+  #container .character-details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  #container .character-details .characters {
+    display: flex;
+    position: relative;
+    margin: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #container .character-details .characters img {
+    height: 65px;
+    width: 65px;
+    border: 1px solid white;
+    margin: 5px 5px;
+  }
+  #container .character-details .characters #active-character {
+    border: 1px solid #047cfc;
+    background-color: #047cfc;
+  }
+  #container .character-details #current-character {
+    display: block;
+  }
+  #container .character-details .current-character {
+    position: relative;
+    border: 1px solid inherit;
+    display: none;
+    width: 350px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #container .character-details .current-character .character-image {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+  }
+  #container .character-details .current-character .character-description {
+    position: absolute;
+    color: white;
+    background: url("https://www.injustice.com/img/tiled-ui-bg.png") repeat;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0 20px;
+    top: 240px;
+    left: 0px;
+    border: 1px solid #201e1e;
+    width: 300px;
+  }
+  #container .character-details .current-character .character-description .heading h3 {
+    font-family: chiller;
+    color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #047cfc, 0 0 40px #047cfc, 0 0 50px #047cfc, 0 0 60px #047cfc, 0 0 70px #047cfc;
+  }
+  #container .character-details .current-character .character-description .heading h4 {
+    color: #047cfc;
+    font-family: raleway;
+    font-size: 12px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #047cfc, 0 0 40px #047cfc, 0 0 50px #047cfc, 0 0 60px #047cfc, 0 0 70px #047cfc;
+  }
+  #container .character-details .current-character .character-description p {
+    font-family: "Raleway";
+    font-size: 14px;
+  }
+
+  #second-nav ul {
+    margin-left: -25px;
+    border: none;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=characters.css.map */

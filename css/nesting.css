@@ -59,7 +59,7 @@
   width: 250px;
 }
 
-.nav ul {
+.my-nav ul {
   color: white;
   list-style-type: none;
   display: flex;
@@ -68,10 +68,10 @@
   justify-content: center;
   border-top: 1px solid #201e1e;
 }
-.nav ul li {
+.my-nav ul li {
   margin-top: -10px;
 }
-.nav ul li a {
+.my-nav ul li a {
   text-decoration: none;
   color: white;
   margin: 0px 30px;
@@ -85,7 +85,7 @@
   text-transform: uppercase;
   transition: text-shadow ease-in-out 0.4s, color ease-in-out 0.4s, filter ease-in-out 0.4s;
 }
-.nav ul li a:hover {
+.my-nav ul li a:hover {
   color: #047cfc;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #047cfc, 0 0 40px #047cfc, 0 0 50px #047cfc, 0 0 60px #047cfc, 0 0 70px #047cfc;
 }
@@ -223,7 +223,7 @@ footer nav {
     width: 100px;
   }
 
-  .nav ul li a {
+  .my-nav ul li a {
     font-size: 1em;
   }
 
@@ -248,6 +248,10 @@ footer nav {
 }
 /* for iphone 5, 6, 7, 8, X */
 @media screen and (max-width: 414px) {
+  header {
+    overflow: hidden;
+  }
+
   .top-header {
     margin: 0;
     color: white;
@@ -278,7 +282,6 @@ footer nav {
 
   .navigation {
     border: 1px solid #201e1e;
-    width: 100vw;
     background-color: black;
     display: flex;
     flex-wrap: nowrap;
@@ -291,8 +294,26 @@ footer nav {
     width: 140px;
     margin: 0px 12px;
   }
-  .navigation .nav {
-    display: none;
+
+  header .my-nav {
+    margin-top: -14px;
+  }
+  header .my-nav ul {
+    color: white;
+    border: 1px solid #201e1e;
+    margin-left: -20px;
+    height: 50px;
+    background-color: black;
+  }
+  header .my-nav ul li {
+    margin-top: -10px;
+  }
+  header .my-nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 30px;
+    font-family: chiller;
+    font-size: 0.7em;
   }
 
   .section-one {
@@ -351,16 +372,16 @@ footer nav {
     /* outer right cyan */
   }
 
-  footer .nav {
+  footer nav {
     margin-top: 100px;
   }
-  footer .nav ul {
+  footer nav ul {
     margin-left: -50px;
   }
-  footer .nav ul li {
+  footer nav ul li {
     margin-top: -10px;
   }
-  footer .nav ul li a {
+  footer nav ul li a {
     margin: 0px 10px;
   }
 

@@ -1,0 +1,232 @@
+#container{
+    background:url('https://www.injustice.com/img/media/bg.jpg') no-repeat;
+    background-position-y: 200px;
+    background-color: black;
+    background-size: 300%;
+
+    .myButtons{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        margin: 100px auto;
+        a{
+            text-transform: uppercase;
+            font-family: chiller;
+            border : 2px solid rgb(32, 30, 30);
+            width : 300px;
+            text-decoration: none;
+            margin : 10px auto;
+            color : white;
+            padding: 20px;
+            background: url('https://www.injustice.com/img/tiled-ui-bg.png') repeat;
+        }
+
+        .active-media{
+            box-shadow:  inset 0 0 50px  transparent,      /* inner white */
+            0 0 20px  rgb(42, 143, 252),            /* outer white */
+            -10px 0 20px  rgb(42, 143, 252),        /* outer left magenta */
+            10px 0 20px  rgb(42, 143, 252);         /* outer right cyan */
+        }
+    }
+
+    #media{
+        margin : 40px auto;
+
+        .videos{
+            display: none;
+            flex-direction: row;
+            flex-wrap : wrap;
+            justify-content: center;
+            align-items: center;
+
+                iframe{
+                    border : 1px solid rgb(32, 30, 30);
+                    background: url('https://www.injustice.com/img/tiled-ui-bg.png');
+                    width : 500px;
+                    height: 400px;
+                    margin : 30px 30px;
+                    padding : 10px;
+                }
+        }
+
+
+        .screenshots{
+            display: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin : 20px 100px;
+
+            img{
+                height: 100px;
+                width: 200px;
+                border: 1px solid white;
+                background : url('https://www.injustice.com/img/tiled-ui-bg.png') repeat;
+                margin: 10px auto;
+                padding: 5px;
+
+            }
+    
+        }
+
+
+
+        .wallpapers{
+            display: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .single-wallpaper{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin : 20px auto;
+
+                img{
+                height: 208px;
+                width: 370px;
+                border: 1px solid white;
+                background : url('https://www.injustice.com/img/tiled-ui-bg.png') repeat;
+                margin: 10px auto;
+                padding: 5px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color : rgb(42, 143, 252);
+                    font-family: raleway;
+                    margin: 5px auto;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                }
+            }
+
+
+        }
+    }
+}
+
+
+/* for ipad */
+@media screen and (max-width : 769px){
+
+}
+
+
+/* for iphone 5, 6, 7, 8, X */
+@media screen and (max-width : 414px){
+    #container{
+        background:url('https://www.injustice.com/img/media/media-bg-mobile.jpg');
+
+        .myButtons{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            a{
+                text-transform: uppercase;
+                font-family: chiller;
+                border : 2px solid rgb(32, 30, 30);
+                width : 250px;
+                text-decoration: none;
+                margin : 10px auto;
+                color : white;
+                padding: 20px;
+                background: url('https://www.injustice.com/img/tiled-ui-bg.png') repeat;
+            }
+
+            .active-media{
+                box-shadow:  inset 0 0 50px  transparent,      /* inner white */
+                0 0 20px  rgb(42, 143, 252),            /* outer white */
+                -10px 0 20px  rgb(42, 143, 252),        /* outer left magenta */
+                10px 0 20px  rgb(42, 143, 252);         /* outer right cyan */
+            }
+        }
+
+        #media{
+            margin : 40px auto;
+
+            .videos{
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                    iframe{
+                        border : 1px solid rgb(32, 30, 30);
+                        width : 300px;
+                        height: 200px;
+                        margin : 15px 30px;
+                    }
+            }
+
+
+            .screenshots{
+                display: none;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+
+                img{
+                    height: 98px;
+                    width: 175px;
+                    border: 1px solid white;
+                    background : url('https://www.injustice.com/img/tiled-ui-bg.png') repeat;
+                    margin: 10px auto;
+                    padding: 5px;
+    
+                }
+        
+            }
+
+
+
+            .wallpapers{
+                display: none;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                .single-wallpaper{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin : 20px auto;
+
+                    img{
+                    height: 208px;
+                    width: 370px;
+                    border: 1px solid white;
+                    background : url('https://www.injustice.com/img/tiled-ui-bg.png') repeat;
+                    margin: 10px auto;
+                    padding: 5px;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color : rgb(42, 143, 252);
+                        font-family: raleway;
+                        margin: 5px auto;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
